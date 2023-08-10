@@ -1,0 +1,233 @@
+body{
+  margin: 0;
+}
+.app {
+  font-family: Arial, sans-serif;
+  background-color: #856e6e;
+  color: #000000;
+}
+.darkmode{
+  position: absolute;
+  top: 0%;
+  border: none;
+  cursor: pointer;
+  background-color: darkgray;
+  font-size: 16px;
+  box-shadow: 1px 1px 10px darkgray;
+}
+
+.header {
+  background-color: rgba(114, 169, 221, 0.849);
+  color: black;
+  padding: 10px;
+  text-align: center;
+  font-family: proxima nova;
+  font-size: 30px;
+}
+
+.banner-slide {
+  display: flex;
+  overflow: hidden;
+  height: 10%;
+}
+.banner-button1{
+  background-color: #ddd;
+  position: relative;
+  left: 50%;
+}
+button{
+  background-color: #ddd;
+}
+.banner-section{
+  height: 8%;
+  background-color: lavender;
+  font-family: raleway;
+
+}
+.section-section{
+  background-color: aqua;
+}
+.section-title{
+  font-family: futura;
+  font-size: 30px;
+  text-shadow: 1px 1px 1px black;
+}
+
+.banner {
+  flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+  height: 100px;
+}
+.nocard{
+  cursor: none;
+  margin-top: 1px;  
+}
+.carddata{
+  background-color: rgb(214, 230, 230);
+  box-shadow: 1px 1px 4px lightblue inset;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+  width: 200px;
+  height: 100px;
+  animation: fadeInUp 0.5s ease-in-out forwards;
+  display: inline;
+  float: left;
+  margin: 1% 1%;
+  padding: 1% 1%;
+  text-align: center;
+  min-height: 200px; 
+  overflow-y: hidden;
+  padding: auto;
+
+}
+.para{
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  width: 200px;
+  height: 120px;
+  text-align: justify;
+  overflow-x: auto;
+}
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+.card-header{
+  border-bottom: 1px solid;
+}
+.text{
+  width: 200px;
+  height: 100px;
+  text-align: center;
+
+}
+.app.app.dark-mode {
+
+  &.dark-mode {
+    background-color: #222; 
+    color: #fff; 
+
+    .banner-slide {
+      background-color: #333; 
+      color: #fff; 
+    }
+    .carddata{
+      background-color: #444; 
+      box-shadow: none;
+      color: #fff; 
+    }
+    .header{
+      background-color: #333;
+      color: white;
+      border-bottom: 1px solid white;
+    }
+    .link{
+      color: white;
+    }
+    .btn{
+      background-color: rgb(133, 125, 125);
+    }
+    .section {
+      background-color: #333; 
+      box-shadow: none;
+      color: #fff; 
+
+      .card {
+        background-color: #444;
+        box-shadow: none; 
+        color: #fff;
+        color: #ddd;
+
+        &.no-cursor {
+          cursor: none;
+          
+        }
+      }
+    }
+  }
+}
+
+
+.app.dark-mode {
+  background-color: #222; 
+  color: #fff; 
+}
+
+.section {
+  background-color: rgb(223, 231, 231);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  padding-left: 2%;
+  overflow-x:auto ;
+  scroll-behavior: smooth;
+  scroll-padding: 1px;
+  border: 1px solid rgb(131, 150, 150);
+  
+}
+.section1{
+  height: 20vh;
+}
+.card {
+  cursor: auto;
+}
+.toggle-button{
+  position: relative;
+  background-color: transparent;
+  color: black;
+  font-size: 20px;
+}
+.card h3 {
+  margin: 0;
+}
+.nocard h3 {
+  margin: 0;
+}
+button {
+  background-color: #4285f4;
+  color: rgb(255, 255, 255);
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: sticky;
+}
+.btn{
+  position: relative;
+  bottom: 20px;
+  background-color: #ddd;
+  border: none;
+  color: black;
+  box-shadow: 1px 1px 4px lightgray;
+}
+.note{
+  position: relative;
+  bottom: 10px;
+  padding-top: 2px;
+}
+.carddata:hover{
+  border: 1px solid skyblue;
+}
+button:hover {
+  background-color: #878fa0;
+}
+.banner-slider {
+  display: flex;
+  overflow: hidden;
+  animation: slideBanner 10s infinite;
+}
+@media (max-width: 768px) {
+
+  .carddata{ 
+    margin-inline-start: 22%; 
+    margin-bottom: 10%;
+  }
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
